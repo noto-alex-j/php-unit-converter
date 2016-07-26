@@ -50,4 +50,3 @@ elseif ($conversion == "pounds" || $conversion == "kilos" || $conversion == "sto
 }
 
 ?>
-
