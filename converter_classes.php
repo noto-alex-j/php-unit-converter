@@ -2,58 +2,58 @@
 
 class Temperature{
 	function __construct(input){
-		$temp = input;
+		var $temp = input;
 	}
 
-	function farenheitToCelsius{
+	function farenheitToCelsius(){
 		(($temp - 32) * 5 / 9) . "° C";
 	}
 
-	function celsiusToFarenheit{
+	function celsiusToFarenheit(){
 		($temp * 9 / 5 + 32) . "° F";
 	}
 }
 
 class Distance{
 	function __construct(input){
-		$distance = input;
+		var $distance = input;
 	}
 
-	function milesToKilometers{
+	function milesToKilometers(){
 		($distance * 1.61) . " kilometers";
 	}
 
-	function kilometersToMiles{
+	function kilometersToMiles(){
 		($distance * 0.62) . " miles";
 	}
 }
 
 class Weight{
 	function __construct(input){
-		$weight = input;
+		var $weight = input;
 	}
 
-	function poundsToKilograms{
+	function poundsToKilograms(){
 		($weight * 0.45) . " kilograms";
 	}
 
-	function kilogramsToPounds{
+	function kilogramsToPounds(){
 		($weight * 2.2) . " pounds";
 	}
 
-	function poundsToStone{
+	function poundsToStone(){
 		($weight * 0.07) . " stone";
 	}
 
-	function stoneToPounds{
+	function stoneToPounds(){
 		($weight * 14) . " pounds";
 	}
 
-	function kilogramstoStone{
+	function kilogramstoStone(){
 		($weight * 0.16) . " stone";
 	}
 
-	function stoneToKilograms{
+	function stoneToKilograms(){
 		($weight * 6.35) . " kilograms";
 	}
 }
