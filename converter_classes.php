@@ -1,65 +1,70 @@
 <?php
 
 class Temperature{
-	function __construct(input){
-		var $temp = input;
+	var $temp;
+
+	function __construct($input){
+		$this->temp = $input;
 	}
 
 	function farenheitToCelsius(){
-		(($temp - 32) * 5 / 9) . "° C";
+		return(($this->temp - 32) * 5 / 9) . "° C";
 	}
 
 	function celsiusToFarenheit(){
-		($temp * 9 / 5 + 32) . "° F";
+		return($this->temp * 9 / 5 + 32) . "° F";
 	}
 }
 
 class Distance{
-	function __construct(input){
-		var $distance = input;
+	var $distance;
+
+	function __construct($input){
+		$this->distance = $input;
 	}
 
 	function milesToKilometers(){
-		($distance * 1.61) . " kilometers";
+		return ($this->distance * 1.61) . " kilometers";
 	}
 
 	function kilometersToMiles(){
-		($distance * 0.62) . " miles";
+		return ($this->distance * 0.62) . " miles";
 	}
 }
 
 class Weight{
-	function __construct(input){
-		var $weight = input;
+	var $weight;
+
+	function __construct($input){
+		$this->weight = $input;
 	}
 
 	function poundsToKilograms(){
-		($weight * 0.45) . " kilograms";
+		return ($this->weight * 0.45) . " kilograms";
 	}
 
 	function kilogramsToPounds(){
-		($weight * 2.2) . " pounds";
+		return ($this->weight * 2.2) . " pounds";
 	}
 
 	function poundsToStone(){
-		($weight * 0.07) . " stone";
+		return ($this->weight * 0.07) . " stone";
 	}
 
 	function stoneToPounds(){
-		($weight * 14) . " pounds";
+		return ($this->weight * 14) . " pounds";
 	}
 
 	function kilogramstoStone(){
-		($weight * 0.16) . " stone";
+		return ($this->weight * 0.16) . " stone";
 	}
 
 	function stoneToKilograms(){
-		($weight * 6.35) . " kilograms";
+		return ($this->weight * 6.35) . " kilograms";
 	}
 }
 
 
 
 ?>
-
 

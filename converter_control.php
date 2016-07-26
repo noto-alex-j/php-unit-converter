@@ -1,4 +1,4 @@
-<?php include "converter-control.php" ?>
+<?php include "converter_classes.php" ?>
 
 
 <?php 
@@ -17,6 +17,7 @@ if ($conversion == "ftoc" || $conversion == "ctof"){
 	elseif ($conversion == "ctof"){
 		$output = $temp->celsiusToFarenheit();
 	}
+}
 elseif ($conversion == "mtok" || $conversion == "ktom"){
 	$distance = new Distance($input);
 	if ($conversion == "mtok"){
@@ -25,6 +26,7 @@ elseif ($conversion == "mtok" || $conversion == "ktom"){
 	elseif ($conversion == "ktom"){
 		$output = $distance->kilometersToMiles();
 	}
+}
 elseif ($conversion == "pounds" || $conversion == "kilos" || $conversion == "stone"){
 	$weight = new Weight($input);
 	if ($conversion == "pounds" && $ks == "kilos"){
@@ -47,6 +49,5 @@ elseif ($conversion == "pounds" || $conversion == "kilos" || $conversion == "sto
 	}
 }
 
-
-		
+?>
 

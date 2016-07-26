@@ -2,7 +2,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript" src= "global.js"></script>
-  <?php include "converter_classes.php"; ?>
+  <?php include "converter_control.php"; ?>
   <title>CONVERSIONTRON</title>
 </head>
 
@@ -11,7 +11,7 @@
     <h1 class= "title">CONVERSIONTRON</h1>
     
     <div class= "converter">
-        <form class= "form" action="index.php" method="post">
+        <form class= "form" action= "index.php" method="post">
             <input type="text" name="input" class= "input">
             <select name= "conversion" class= "select" id= "conversion">
                 <option value= ""></option>
@@ -40,9 +40,8 @@
             </select>
             <input type="submit" name="submit" class= "submit" value="CONVERTILIZE!">
         </form>
-        <div class= "output"><?php $output ?></div>
+        <div class= "output"><?php echo $output; ?></div>
     </div>
-
 </body>
 
 </html>
